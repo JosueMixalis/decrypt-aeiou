@@ -1,0 +1,358 @@
+
+body{
+    background: #F0F8FF;
+}
+
+
+#logo {
+    left: 84px;
+    top: 40px;
+    position: absolute;
+}
+  
+
+#text-input{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 60px;
+    font-weight: bold;
+    vertical-align: top;
+    top: 168px;
+    left: 240px;
+    color: #0A3871;
+    border: none;
+    height: 288px;
+    width: 680px;
+    text-align: left;
+    overflow: auto;
+    scrollbar-width: none;
+    resize: none;
+    border: #F0F8FF;
+    background: #F0F8FF;
+}
+#text-input::placeholder {
+    color: inherit;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+#text-input:focus {
+    outline: none;
+  }
+
+#list{
+    width: 40%;
+    display:inline-block;
+    position: absolute;
+    top: 851px;
+    left: 264px;
+    vertical-align: top;
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 12px;
+    line-height: 18px;
+    align-content: Left;
+    Opacity: 80%;
+    color: #495057;
+}
+#warning{
+    position: absolute;
+    top: 852px;
+    left: 240px;
+}
+
+#button-encrypt{
+    position: absolute;
+    top: 885px;
+    left: 240px;
+    background-color: #0A3871;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19.36px;
+    align-content: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#button-decrypt{
+    position: absolute;
+    top: 885px;
+    left: 592px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    background-color: #d8dfe8;
+    color: #0A3871;
+    border-color: #0A3871;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 19.36px;
+    align-content: center;
+}
+
+#textarea-background{
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1168px;
+    border-radius: 32px;
+    resize: none;
+    background: white;
+}
+
+
+#text-output{
+    display: block;
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    top: 72px;
+    left: 1200px;
+    resize: none;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    align-content: left;
+    color: #495057;
+    border: none;
+
+}
+
+#girl{
+    position: absolute;
+    top: 283px;
+    left: 1200px;
+    z-index: 1; 
+}
+
+#first-p{
+    position: absolute;
+    top: 619px;
+    left: 1200px;
+    width: 336px;
+    height: 58px;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 28.8px;
+    color: black;
+}
+
+#second-p{
+    position: absolute;
+    top: 693px;
+    left: 1200px;
+    z-index: 4;
+    text-align: center;
+    width: 336px;
+    height: 48px;
+    font-family: 'Montserrat', sans-serif;
+    size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #495057;
+}
+
+#button-copy {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    top: 885px;
+    left: 1200px;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    background-color: white;
+    color: #0A3871;
+    border-color: #0A3871;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 19.36px;
+    align-content: center;
+}
+
+
+@media screen and (min-width:377px) and (max-width:770px) {
+    #logo {
+        left: 0px;
+        top: 16px;
+    }   
+
+    #text-input {
+        left: 40px;
+        top: 240px;
+        width: 688px;
+        height: 288px;
+        line-height: 48px;
+    }
+
+    #list{
+        top: 837px;
+        left: 40px;
+    }
+
+    #warning{
+        top: 837px;
+        left: 40px;
+    }
+
+    #button-encrypt{
+        top: 870px;
+        left: 40px;
+        width: 332px;
+    }
+
+    #button-decrypt{
+        top: 870px;
+        left: 396px;
+        width: 332px;
+    }
+
+    #textarea-background{
+        width: 688px;
+        height: 133px;
+        top: 1001px;
+        left: 40px;
+        gap: 32px;
+        box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.08);   
+    }
+
+    #text-output{
+        top: 1033px;
+        left: 72px;
+        width: 624px;
+        height: 180px;
+        display: none;
+    }
+
+    #girl{
+        display: none;
+    }
+
+    #first-p{
+        top: 1033px;
+        left: 72px;
+        width: 624px;
+        height: 29px;
+    }
+
+    #second-p{
+        top: 1078px;
+        left: 72px;
+        width: 624px;
+        height: 24px;
+
+    }
+
+    #button-copy{
+        top: 1245px;
+        left: 72px;
+        width: 624px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:376px) and (min-width:200px) {
+
+    #logo {
+        left: 0px;
+        top: 24px;
+    }   
+
+    #text-input {
+        left: 16px;
+        top: 152px;
+        width: 343px;
+        height: 200px;
+        line-height: 48px;
+    }
+
+    #list{
+        top: 451px;
+        left: 40px;
+        width: 210px;
+    }
+
+    #warning{
+        top: 452px;
+        left: 18px;
+    }
+
+    #button-encrypt{
+        top: 485px;
+        left: 16px;
+        width: 343px;
+    }
+
+    #button-decrypt{
+        top: 576px;
+        left: 16px;
+        width: 343px;
+    }
+
+    #textarea-background{
+        width: 327px;
+        height: 186px;
+        top: 707px;
+        left: 24px;
+        gap: 32px;
+        border-radius: 32px;
+        box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.08);   
+    }
+
+    #text-output{
+        top: 1128px;
+        left: 48px;
+        width: 279px;
+        height: 432px;
+        display: none;
+    }
+
+    #girl{
+        display: none;
+    }
+
+    #first-p{
+        top: 739px;
+        left: 56px;
+        width: 263px;
+        height: 58px;
+    }
+
+    #second-p{
+        top: 813px;
+        left: 56px;
+        width: 263px;
+        height: 48px;
+
+    }
+
+    #button-copy{
+        top: 1592px;
+        left: 48px;
+        width: 279px;
+    }
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style-encriptador.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    </style>
+    <title>Alura Challenge-Desafio 1-Josue Mixalis</title>
+</head>
+<body>
+    <header>
+        <img src="/Images/Logo.png" alt="Logo" id="logo">
+        
+    </header>
+    <div class="textarea-container-input">
+         <textarea name="input-text" id="text-input" cols="70" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+    </div>
+
+    <div class="warning">
+        <img  id="warning" src="/Images/Vector.png" alt="warning">
+        <ul id="list">
+            <li>solo letras minúsculas y sin acentos</li>
+        </ul>
+
+    </div>
+
+    <div class="buttons">
+        <input id="button-encrypt" type="button" value="Encriptar" onclick="writeEncrypt()">
+        <input id="button-decrypt" type="button" value="Desincriptar">
+    </div>
+
+    <div class="textarea-container-output">
+        <div id="textarea-background">
+        </div>
+        <textarea readonly="true" name="output-text" id="text-output"></textarea>
+        <p id="first-p">Ningún mensaje fue encontrado</p>
+        <p id="second-p">Ingresa el texto que desees encriptar o desencriptar</p>
+        <img src="/Images/Muñeco.png" alt="girl" id="girl">
+        <input id="button-copy" type="button" value="copiar">
+    </div>
+    
+</body>
+<script src="/index.js"></script>
+</html>
